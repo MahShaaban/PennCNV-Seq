@@ -71,7 +71,7 @@ echo " \
     perl $PennCNV_dir/detect_cnv.pl \
         $sample.chr$chrom.baflrr \
         -wgs \
-        -hmmfile wgs.hmm \
+        -hmmfile lib/wgs.hmm \
         -pfb $ref_dir/$gv""_$pop.sites.2015_08.pfb \
         -output $PWD/$sample.rawcnv" > detect_cnv.$sample.sh
 # qsub -l h_vmem=1G -cwd -V detect_cnv.$sample.sh
